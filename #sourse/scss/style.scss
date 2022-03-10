@@ -14,7 +14,7 @@
 	-o-font-feature-settings: 'lnum';
 }
 //Переменные
-$maxwidth: 1170;
+$maxwidth: 1200;
 //================================================================================
 //Header
 body{
@@ -319,7 +319,52 @@ body{
 .main-content-text span{
 	float: right;
 }
-
+//==========================================================
+//Main-about
+.main-about {
+}
+.main-about-title {
+	@include adaptiv-font(40, 20);
+	font-weight: 700;
+	@include adaptiv-margin-bottom(21, 10);
+}
+.main-about-subtitle {
+	@include adaptiv-font(14, 12);
+	font-weight: 500;
+	color: #757575;
+	margin: 0 0 10px 0;
+}
+.menu-about-text {
+	@include adaptiv-font(18, 12);
+	font-weight: 500;
+	@include adaptiv-margin-bottom(15, 10);
+}
+.main-about-list {
+	@include adaptiv-margin-bottom(20, 12);
+}
+.about-list {
+	margin: 0
+}
+.about-link {
+	@include adaptiv-font(18, 12);
+	font-weight: 500;
+	@include adaptiv-margin-bottom(13, 5);
+	&:last-child{
+		margin: 0;
+	}
+}
+.about-link::before{
+	content: '•';
+	margin: 0 5px 0 0;
+}
+.main-about-btn {
+	@include adaptiv-font(18, 12);
+	
+}
+.main-about-btn a{
+	color: #DA394E;
+	text-decoration: underline;
+}
 
 //================================================================
 @media (min-width: 550px){
