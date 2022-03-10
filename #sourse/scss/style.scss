@@ -246,6 +246,7 @@ body{
 	z-index: 1;
 	background-color: #EA4979;
 	color: white;
+	font-weight: 700;
 	padding: 11px 19px;
 	border-radius: 54px;
 	display: inline-block;
@@ -253,9 +254,13 @@ body{
 }
 .banner-btn {
 	color: white;
+	font-size: 13px;
 }
 //========================================================
 //Main-banner-row
+.main-banner__item{
+	margin: 0 0 50px 0;
+}
 .main-banner-row {
 	margin: 1px;
 }
@@ -288,9 +293,43 @@ body{
 	border-radius: 50px;
 	color: #EA4979;
 }
+//==================================================================
+//Main-content
+.main-content {
+	margin: 0 0 50px 0;
+}
+.main-content-item {
+	margin: 0 0 11px 0;
+}
+.main-content-picture {
+	padding: 0;
+}
+.main-content-picture img {
+	width: 52px;
+	height: 38px;
+	float: left;
+}
+.main-content-text {
+	color: #15A490;
+	font-weight: 700;
+	font-size: 15px;
+	position: relative;
+	top: 11px;
+}
+.main-content-text span{
+	float: right;
+}
 
 
-
+//================================================================
+@media (min-width: 550px){
+	.row-title{
+		padding: 10px 0 10px 50px;
+	}
+	.row-link{
+		padding: 10px 50px 10px 0;
+	}
+}
 //================================================================
 @media (min-width: 768px){
 	.header__logo{
@@ -320,7 +359,7 @@ body{
 		left: 12px;
 	}
 	.header-search-btn{
-		top: 2px;
+		bottom: 1px;
 		right: 8px;
 		position: relative;
 	}
@@ -357,6 +396,60 @@ body{
 	top: 13px;
 	left: 11px;
 }
+//Banner=====
+.main-banner {
+	height: 692px;
+}
+.banner-image{
+	width: 450px;
+	height: 692px;
+}
+//========================
+.main-banner__title {
+	padding: 70px 0 25px;
+	font-size: 30px;
+}
+.main-banner__text {
+	font-size: 20px;
+	margin: 0 0 30px 0;
+}
+.main-banner__btn {
+	padding: 21px 39px;
+	margin: 0 0 285px 0;
+}
+.banner-btn {
+	font-size: 20px;
+}
+//==========================
+.main-banner-row {
+	margin: 1px;
+}
+
+.row-body {
+	text-align: center;
+	margin: 0 2px 0 0;
+	&:last-child{
+		margin: 0;
+	}
+}
+.row-title{
+	padding: 20px;
+	font-size: 15px;
+	float: none;
+
+}
+.row-title span{
+	float: none;
+}
+.row-link{
+	padding: 10px 20px 30px 20px;
+}
+.row-link a{
+	float: none;
+	padding: 8px 19px;
+	font-size: 14px;
+}
+.main-content-text span{}
 }
 
 //======================================================
@@ -383,6 +476,11 @@ body{
 		font-size: 18px;
 		color: #EA4979;
 	}
+	.header-basket__link{
+		span{
+			opacity: 0;
+		}
+	}
 	.header__phone{
 		display: inline-block;
 		top: 10px;
@@ -399,4 +497,64 @@ body{
 	.header-menu{
 		display: block;
 	}
+	
+//===============================================
+//Banner
+.banner-image{
+	width: 580px;
+}
+.main-banner__title {
+	font-size: 45px;
+	padding: 90px 0 15px 0;
+}
+.main-banner__text {
+	font-size: 20px;
+	margin: 0 0 39px 0;
+}
+.main-banner__btn {
+	padding: 22px 54px;
+	border-radius: 54px;
+	margin: 0 0 170px 0;
+}
+.banner-btn {
+	font-size: 25px;
+}
+//==================
+//Banner-row
+.main-banner-row {
+	margin: 1px;
+}
+.row-body {
+	margin-bottom: 10px;
+	width: 314px;
+}
+.row-title{
+	padding: 24px 22px 0 22px;
+	font-size: 22px;
+	text-align: center;
+}
+.row-title span{
+}
+.row-link{
+	padding: 51px 70px 45px 70px;
+}
+.row-link a{
+	padding: 15px 40px;
+	font-size: 20px;
+}
+//==========================
+//Main-content
+.main-content-picture img{
+	width: 72px;
+	height: 50px;
+}
+.main-content-text {
+	font-size: 20px;
+	position: relative;
+	top: 14px;
+	left: 20px;
+}
+.main-content-text span{
+	float: left;
+}
 }
