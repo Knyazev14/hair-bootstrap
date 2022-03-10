@@ -262,7 +262,7 @@ body{
 	margin: 0 0 50px 0;
 }
 .main-banner-row {
-	margin: 1px;
+	
 }
 
 .row-body {
@@ -359,13 +359,85 @@ body{
 }
 .main-about-btn {
 	@include adaptiv-font(18, 12);
+	margin: 0 0 50px 0;
 	
 }
 .main-about-btn a{
 	color: #DA394E;
 	text-decoration: underline;
 }
+//================================================================
+//Main-brand
+.main-brand-title {
+	margin: 0 0 30px 0;
+	font-size: 20px;
+	font-weight: 700;
+}
+.main-brand {
+	position: relative;
+}
+.main-brand-background {
+	background-color: #F6F9F7;
+	position: absolute;
+	height: 419px;
+	width: 100%;
+}
+.row-brand {
+	text-align: center;
+	margin: 33px 0 0 0;
+}
 
+.one {
+	text-align: center;
+	margin: 0 0 16px 0;
+}
+.two {
+	text-align: center;
+	margin: 0 0 2px 0;
+}
+.three{
+	text-align: center;
+}
+.four{
+	margin: 0 0 14px 0;
+	position: relative;
+}
+.five{
+	text-align: center;
+}
+.brand-inst {
+	display: inline-block;
+	width: 97px;
+	text-align: center;
+	margin: 0 0 21px;
+}
+.one img{
+	width: 97px;
+	height: 20px;
+}
+.two img{
+	width: 92px;
+	height: 34px;
+}
+.three img{
+	width: 88px;
+	height: 40px;
+}
+.four img{
+	width: 103px;
+	height: 25px;
+	position: relative;
+	top: 5px;
+}
+.five img{
+	width: 40px;
+	height: 90px;
+	width: 100%;
+}
+.brand-inst img{
+	width: 62px;
+	height: 35px;
+}
 //================================================================
 @media (min-width: 550px){
 	.row-title{
@@ -467,15 +539,12 @@ body{
 }
 //==========================
 .main-banner-row {
-	margin: 1px;
+
 }
 
 .row-body {
 	text-align: center;
-	margin: 0 2px 0 0;
-	&:last-child{
-		margin: 0;
-	}
+	width: 220px;
 }
 .row-title{
 	padding: 20px;
@@ -494,9 +563,46 @@ body{
 	padding: 8px 19px;
 	font-size: 14px;
 }
-.main-content-text span{}
-}
+.main-content-text span{
 
+}
+.right{
+	float: right;
+}
+.center{
+	float: right;
+	transform: translate(-5%, 0);
+}
+.left{
+	float: left;
+}
+}
+@media (min-width: 992px){
+	.main-banner-row {
+		
+	}
+	.center{
+		transform: translate(-5%, 0);
+	}
+	.row-body {
+		margin-bottom: 10px;
+		width: 290px;
+	}
+	.row-title{
+		padding: 20px 20px 0 20px;
+		font-size: 22px;
+		text-align: center;
+	}
+	.row-title span{
+	}
+	.row-link{
+		padding: 40px 60px 40px 60px;
+	}
+	.row-link a{
+		padding: 10px 30px;
+		font-size: 20px;
+	}
+}
 //======================================================
 @media (min-width: 1200px){
 	.header__title{
@@ -587,6 +693,9 @@ body{
 	padding: 15px 40px;
 	font-size: 20px;
 }
+.center{
+	transform: translate(-10%, 0);
+}
 //==========================
 //Main-content
 .main-content-picture img{
@@ -601,5 +710,100 @@ body{
 }
 .main-content-text span{
 	float: left;
+}
+//Main-brand============================================
+.main-brand-title {
+	margin: 0 0 30px 0;
+	font-size: 40px;
+	transform: translate(0, 240%);
+	position: relative;
+	z-index: 1;
+}
+.main-brand {
+
+}
+.main-brand-background {
+	height: 344px;
+}
+.row-brand {
+	margin: 33px 0 0 0;
+	transform: translate(0, 70%);
+}
+.brand-right{
+	float: right;
+	transform: translate(-110%, 0);
+}
+.brand-five{
+	transform: translate(70%, 0);
+}
+.brand-two{
+	transform: translate(50%, 0);
+}
+.brand-three{
+	transform: translate(25%, 0);
+}
+.one {
+	width: 180px;
+	margin: 0 0 46px 0;
+}
+.two {
+	margin: 0 0 28px 0;
+}
+.three{
+	margin:  0 0 18px 0;
+}
+.four{
+	margin: 0 0 44px 0;
+}
+.five{
+}
+.brand-inst {
+	width: 97px;
+	margin: 0 0 21px 0;
+}
+.one img{
+	width: 180px;
+	height: 32px;
+}
+.two img{
+	width: 140px;
+	height: 50px;
+}
+.three img{
+	width: 134px;
+	height: 60px;
+}
+.four img{
+	width: 152px;
+	height: 38px;
+
+}
+.five img{
+	width: 116px;
+	height: 116px;
+	position: relative;
+	bottom: 37px;
+}
+.inst-five{
+	position: relative;
+	bottom: 37px;
+}
+.brand-inst img{
+	height: 35px;
+}
+.link-one img{
+	width: 140px;
+}
+.link-two img{
+	width: 120px;
+}
+.link-three img{
+	width: 125px;
+}
+.link-four img{
+	width: 130px;
+}
+.link-five img{
+	width: 100px;
 }
 }

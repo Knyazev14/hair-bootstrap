@@ -1,10 +1,10 @@
-'use strick';
+'use strict';
 
-let body = document.querySelector('body');
-let bodyWidth = body.clientWidth;
-if(bodyWidth > 768){
-	let phone = document.querySelector('.phone');
-	phone.innerHTML = '+375 33 375 98 89';
+const menuIcon = document.querySelector('.menu__icon');
+	if(menuIcon){
+	const menuBody = document.querySelector('.header-menu');
+	menuIcon.addEventListener("click", function(){
+	menuIcon.classList.toggle("_active");
+	menuBody.classList.toggle("_active");
+})
 }
-
-
