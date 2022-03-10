@@ -28,5 +28,13 @@
 .icon-search:before {
   content: "\e900";
   color: #2bdac1;
-  font-size: 22px;
+  font-size: 14px;
+}
+
+@media (min-width:768px){
+	.icon-search:before {
+		content: "\e900";
+		color: #2bdac1;
+		font-size: 22px;
+	}
 }

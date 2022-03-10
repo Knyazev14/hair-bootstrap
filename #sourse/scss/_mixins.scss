@@ -9,7 +9,7 @@
 	}
 }
 
-@mixin adaptiv-width($pcSize, $mobSize) {   //Ширина
+@mixin adaptiv-width($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
@@ -20,68 +20,13 @@
 	}
 }
 
-@mixin adaptiv-padding-right($pcSize, $mobSize) {   //Правый отступ
+@mixin adaptiv-padding($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
-		padding-right: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxwidth}));
+		padding: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxwidth}));
 	}
 	@media (min-width: 767px) {
-		padding-right: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxwidth}));
-	}
-}
-
-@mixin adaptiv-padding-left($pcSize, $mobSize) {   //Левый отступ
-	$addSize: $pcSize - $mobSize;
-	$addMobSize: $addSize + $addSize  * 0.7;
-	@media (max-width: 767px) {
-		padding-left: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxwidth}));
-	}
-	@media (min-width: 767px) {
-		padding-left: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxwidth}));
-	}
-}
-
-@mixin adaptiv-padding-top($pcSize, $mobSize) {   // Верхний отступ
-	$addSize: $pcSize - $mobSize;
-	$addMobSize: $addSize + $addSize  * 0.7;
-	@media (max-width: 767px) {
-		padding-top: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxwidth}));
-	}
-	@media (min-width: 767px) {
-		padding-top: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxwidth}));
-	}
-}
-
-@mixin adaptiv-padding-bottom($pcSize, $mobSize) {   // Нижний отступ
-	$addSize: $pcSize - $mobSize;
-	$addMobSize: $addSize + $addSize  * 0.7;
-	@media (max-width: 767px) {
-		padding-bottom: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxwidth}));
-	}
-	@media (min-width: 767px) {
-		padding-bottom: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxwidth}));
-	}
-}
-
-@mixin adaptiv-height($pcSize, $mobSize) {   // Высота
-	$addSize: $pcSize - $mobSize;
-	$addMobSize: $addSize + $addSize  * 0.7;
-	@media (max-width: 767px) {
-		height: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxwidth}));
-	}
-	@media (min-width: 767px) {
-		height: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxwidth}));
-	}
-}
-
-@mixin adaptiv-margin-bottom($pcSize, $mobSize) {  
-	$addSize: $pcSize - $mobSize;
-	$addMobSize: $addSize + $addSize  * 0.7;
-	@media (max-width: 767px) {
-		margin-bottom: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxwidth}));
-	}
-	@media (min-width: 767px) {
-		margin-bottom: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxwidth}));
+		paddng: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxwidth}));
 	}
 }
