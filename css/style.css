@@ -976,6 +976,8 @@ body {
   .one img {
     width: 180px;
     height: 32px;
+    position: relative;
+    top: 16px;
   }
   .two img {
     width: 140px;
@@ -1003,7 +1005,7 @@ body {
     height: 35px;
   }
   .link-one img {
-    width: 140px;
+    width: 125px;
   }
   .link-two img {
     width: 120px;
